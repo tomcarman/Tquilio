@@ -37,8 +37,8 @@ This will act as the endpoint which you direct your Twilio account to.
 + Configure the Public Access settings for the Site User
   + From the Site Details page, click **Pulic Access Settings**
   + Give the profile the following access:
-    + Visualforce Page Access: 'TwilioLanding'
-    + Apex Class Access: 'TranscriptionHandler'
+    + Visualforce Page Access: 'Tq_TwilioLanding'
+    + Apex Class Access: 'Tq_TranscriptionHandler'
     + Object Access: 'Twilio_Calls__c' (CRUD)
 
 
@@ -62,7 +62,7 @@ In this example, the user:
 + Types their name into the keypad
 + Salesforce queries for the user based on the input
 + User is prompted to save the number they are ringing from against there User record
-+ User leaves a voicenote, which is transcribed and stored as a Task assigned to their User account in Salesforce - via calling a public REST service.
++ User leaves a voicenote, which is transcribed and stored as a Task assigned to their User record in Salesforce - via calling a public REST class.
 
 
 **Recording** 
@@ -79,7 +79,7 @@ Task Created in Salesforce:
 
 ## Today's Diary (from known caller)
 
-In this example, the User:
+In this example, the user:
 + Calls from a known phone number (eg. it is stored agains their User record in Salesforce)
 + Requests to hear their diary for the day
 
