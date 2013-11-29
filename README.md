@@ -53,6 +53,45 @@ This will act as the endpoint which you direct your Twilio account to.
     + Set the app Voice Request URL to the URL of your Force.com site - eg. http://yourdomain-developer-edition.xxx.force.com/
 
 
+# Examples
+
+## Voicenote (calling from an unknown number)
+
+In this example, the user:
++ Rings Twilio from an unknown number (eg. it is not stored against a User record in Salesforce)
++ Types their name into the keypad
++ Salesforce queries for the user based on the input
++ User is prompted to save the number they are ringing from against there User record
++ User leaves a voicenote, which is transcribed and stored as a Task assigned to their User account in Salesforce - via calling a public REST service.
+
+
+**Recording** 
+
+[Click here to listen/download (mp3)](https://dl.dropboxusercontent.com/u/23217397/Projects/Twilio/Example%20Calls/Voicenote_unidentified.mp3 "call")
+
+**Screenshot** 
+
+Task Created in Salesforce: 
+
+![Screenshot](https://dl.dropboxusercontent.com/u/23217397/Projects/Twilio/Example%20Calls/Voicenote_screenshot.png)
+
+
+
+## Today's Diary (from known caller)
+
+In this example, the User:
++ Calls from a known phone number (eg. it is stored agains their User record in Salesforce)
++ Requests to hear their diary for the day
+
+**Recording**
+
+[Click here to listen/download (mp3)](https://dl.dropboxusercontent.com/u/23217397/Projects/Twilio/Example%20Calls/Get%20Diary_identified.mp3 "call")
+
+**Screenshot**
+
+Existing Event in Salesforce:
+![Screenshot](https://dl.dropboxusercontent.com/u/23217397/Projects/Twilio/Example%20Calls/Task_screenshot.png)
+
 
 
 
